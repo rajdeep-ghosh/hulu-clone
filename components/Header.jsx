@@ -11,7 +11,7 @@ import {
 
 function Header() {
   return (
-    <div className="m-5 flex flex-col sm:flex-row justify-between items-center">
+    <header className="m-5 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex flex-grow justify-evenly max-w-2xl">
         <HeaderItem title="home" Icon={HomeIcon} />
         <HeaderItem title="trending" Icon={LightningBoltIcon} />
@@ -26,7 +26,7 @@ function Header() {
         width={200} 
         height={100}        
       />
-    </div>
+    </header>
   );
 }
 
