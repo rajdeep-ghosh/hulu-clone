@@ -6,8 +6,8 @@ import {
   UserIcon,
   SearchIcon,
   LightningBoltIcon,
-  BadgeCheckedIcon,
-} from "@heroicons/react/solid";
+  BadgeCheckIcon,
+} from "@heroicons/react/outline";
 
 function Header() {
   return (
