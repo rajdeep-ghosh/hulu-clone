@@ -1,10 +1,11 @@
+import styles from "./styles/Nav.module.css";
 import requests from "../utils/requests";
 
 function Nav() {
   return (
     <nav>
       <div 
-        className="flex whitespace-nowrap text-lg sm:text-2xl px-10 sm:px-20 space-x-10 sm:space-x-20 overflow-x-auto"
+        className={`flex whitespace-nowrap text-lg sm:text-2xl px-10 sm:px-20 space-x-10 sm:space-x-20 overflow-x-auto ${styles.hide__scrollbar}`}
       >
         {Object.entries(requests).map(([key, { title, url }]) => {
           return (
