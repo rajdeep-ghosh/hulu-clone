@@ -3,7 +3,7 @@ import requests from "../utils/requests";
 
 function Nav() {
   return (
-    <nav>
+    <nav className="relative">
       <div 
         className={`flex whitespace-nowrap text-lg sm:text-2xl px-10 sm:px-20 space-x-10 sm:space-x-20 overflow-x-auto ${styles.hide__scrollbar}`}
       >
@@ -18,6 +18,7 @@ function Nav() {
           );
         })}  
       </div>
+      <div className="absolute top-0 right-0 h-10 w-1/6 bg-gradient-to-l from-[#06202A]" />
     </nav>
   );
 }
