@@ -1,6 +1,6 @@
 const API_KEY = process.env.TMDB_API_KEY;
 
-export default {
+const endpoints = {
   fetchTrending: {
     title: "Trending",
     url: `/trending/all/week?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc`,
@@ -54,3 +54,5 @@ export default {
     url: `/discover/movie?api_key=${API_KEY}&with_genres=99&sort_by=popularity.desc`,
   },
 };
+
+export default endpoints;
