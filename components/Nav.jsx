@@ -11,7 +11,7 @@ function Nav() {
           return (
             <h2 
               key={key} 
-              className="cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-red-500 last:pr-6"
+              className="cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-red-500 last:pr-8 sm:last:pr-20"
             >
               {title}
             </h2>
