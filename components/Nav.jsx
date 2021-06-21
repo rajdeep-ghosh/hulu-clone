@@ -1,7 +1,10 @@
+import { useRouter } from "next/router";
 import styles from "./styles/Nav.module.css";
 import requests from "../utils/requests";
 
 function Nav() {
+  const Router = useRouter();
+
   return (
     <nav className="relative">
       <div 
@@ -10,7 +13,8 @@ function Nav() {
         {Object.entries(requests).map(([key, { title, url }]) => {
           return (
             <h2 
-              key={key} 
+              key={key}
+              onClick={() => {Router.push(`/?genre=${key}`)}} 
               className="cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-red-500 last:pr-8 sm:last:pr-20"
             >
               {title}
