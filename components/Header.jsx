@@ -13,8 +13,12 @@ function Header() {
   return (
     <header className="m-5 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex flex-grow justify-evenly max-w-2xl">
-        <HeaderItem title="home" Icon={HomeIcon} />
-        <HeaderItem title="trending" Icon={LightningBoltIcon} />
+        <a href="/">
+          <HeaderItem title="home" Icon={HomeIcon} />
+        </a>
+        <a href="/?genre=fetchTrending">
+          <HeaderItem title="trending" Icon={LightningBoltIcon} />
+        </a>
         <HeaderItem title="verified" Icon={BadgeCheckIcon} />
         <HeaderItem title="collections" Icon={CollectionIcon} />
         <HeaderItem title="search" Icon={SearchIcon} />
