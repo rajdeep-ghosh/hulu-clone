@@ -1,3 +1,4 @@
+import Details from "./Details";
 import Thumbnail from "./Thumbnail";
 
 function Main({ results }) {
@@ -6,10 +7,10 @@ function Main({ results }) {
     <div>
       {results.map((result) => {
         return (
-          <Thumbnail
-            backdrop={result.backdrop_path}
-            poster={result.poster_path}
-          />
+          <div>
+            <Thumbnail backdrop={result.backdrop_path} poster={result.poster_path} />
+            <Details result={result} />
+          </div>
         );
       })}
     </div>
