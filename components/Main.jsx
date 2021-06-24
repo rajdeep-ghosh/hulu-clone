@@ -1,10 +1,10 @@
-import Details from "./Details";
 import Thumbnail from "./Thumbnail";
+import Details from "./Details";
 
 function Main({ results }) {
   console.log(results);
   return (
-    <div>
+    <div className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3">
       {results.map((result) => {
         return (
           <div className="group p-2 cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
