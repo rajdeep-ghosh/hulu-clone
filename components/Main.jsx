@@ -1,9 +1,10 @@
+import FlipMove from "react-flip-move";
 import Thumbnail from "./Thumbnail";
 import Details from "./Details";
 
 function Main({ results }) {
   return (
-    <div className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3">
+    <FlipMove className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3">
       {results.map((result) => {
         return (
           <div 
@@ -15,7 +16,7 @@ function Main({ results }) {
           </div>
         );
       })}
-    </div>
+    </FlipMove>
   );
 }
 

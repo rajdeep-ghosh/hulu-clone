@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import Image from "next/image";
 
-function Thumbnail({ backdrop, poster }) {
+const Thumbnail = forwardRef(({ backdrop, poster }, ref) => {
   const baseURL = "https://image.tmdb.org/t/p/original/";
 
   return (
-    <div>
+    <div ref={ref}>
       <Image
         layout="responsive"
         src={`${baseURL}${backdrop || poster}` || `${baseURL}${poster}`}
@@ -13,6 +14,6 @@ function Thumbnail({ backdrop, poster }) {
       />
     </div>
   );
-}
+})
 
 export default Thumbnail;
